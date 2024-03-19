@@ -1,0 +1,519 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tungsters</title>
+    <link rel="stylesheet" href="hindi.css">
+    <script src="https://kit.fontawesome.com/414aaecfed.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./hindi.js" defer></script></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900italic,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+
+* {
+    --primary-bg: #A52FC1;
+    --bubles-color: #AE44C8;
+    --contra: #29282a;
+}
+
+*{
+    margin: 1rem;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #1C1F2B;
+}
+
+.blurbody{
+  opacity: 0;
+}
+.btn a{
+  text-decoration: none;
+  color:white;
+}
+
+.getbtn a{
+  text-decoration: none;
+  color:black;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 1.5rem;
+    background-color:#323542;
+    border:none;
+}
+
+.navbar li{
+    text-decoration: none;
+    list-style: none;
+}
+.btn{
+    background: none;
+    border: none;
+    color:white;
+    font-size: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:600;
+}
+
+.btn1{
+    background: none;
+    border: none;
+    font-size:2rem;
+    position: relative;
+    right:200px;
+}
+
+.btn2{
+    /* background: yellow; */
+    border: none;
+    border-radius: 8px;
+    color:#1C1F2B;
+    /* padding:0.2rem 0.1rem; */
+    /* padding-left: 1rem; */
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    left:200px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: yellow;
+    background-color: yellow;
+    color:#1C1F2B;
+    font-size: 1rem;
+    zoom: 120%;
+    transition:ease-out 0.5s;    
+    border-radius: 4px;
+    padding: 0.5rem;
+
+}
+
+.log-con {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.log-con>img {
+    height: 50%;
+}
+
+
+.user-info-con {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+    gap: 1rem;
+    color: white;
+}
+
+.user-info-con>img {
+    height: 50px;
+    background: white;
+    border-radius: 100%;
+    border: 2px solid darkgrey;
+}
+.centertag{
+    overflow: hidden;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+.user-name-input-con {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 4rem 4rem;
+    height: 40%;
+    border-radius: 1rem;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-around;
+    
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-wrapper label {
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+}
+
+.input-wrapper input {
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    outline: none;
+    padding: 0.5rem 0.8rem;
+}
+
+.add-name-button {
+    background: lightgrey;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.3rem;
+}
+
+.hide{
+    display: none;
+}
+.hinditext{
+    font-size: 4rem;
+    text-align: left;
+    font-family: 'Kruti Dev', sans-serif;
+    position: absolute;
+    top:250px;
+    left:200px;
+    color:white;
+}
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color:#111827;
+    padding: 15px;
+    border-radius: 0.7rem;
+    position: absolute;
+    top:400px;
+    left:200px;
+    width:75%;
+
+  }
+  
+  .grid-item {
+    font-family: 'Kruti Dev', sans-serif;
+    font-size: 24px;
+    color: rgb(210, 27, 27);
+    text-align: center;
+    line-height: 50px;
+    background-color: #1C1F2B;
+    border-radius: 0.5rem;
+
+  }
+
+  .testbutton{
+    display: block;
+    background-color: #323542;
+    border-radius: 0.4rem;
+    color:yellow;
+    padding:1rem 2rem;
+    position: absolute;
+    top:1500px;
+    text-align: center;
+    left:650px;
+  }
+
+  .main-container {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #quiz-container {
+    position: absolute;
+    top: 1500px;
+    left: 530px;
+    background-color: #434343;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    color: #f9f9f9;
+    z-index:100;
+  }
+  
+  #question-container {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    color: #434343;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: yellow;
+    color: #434343;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    background-color: #7a7a7a;
+    color: yellow;
+  }
+  
+  #score-container {
+    text-align: center;
+    color: #333;
+  }
+  
+  #quiz-container h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #f9f9f9;
+  }
+  
+  #quiz-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+  }
+  
+  #quiz-container button {
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  }
+  
+  #quiz-container button:hover {
+    transform: scale(1.1);
+    background-color: #7a7a7a;
+    color: yellow;
+  }
+  .text1{
+    color:white;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top:1350px;
+  }
+</style>
+<body>
+    <div class="navbar">
+        <li><button class="btn1"><i class="fa-solid fa-language fa-shake fa-2xl" style="color: #514d1f;"></button></i></li>
+        <li><button class="btn">HOME</button></li>
+        <li><button class="btn">Our Services</button></li>
+        <li><button class="btn"><a href="about.html">Team</a></button></li>
+        <!-- <li><button class="btn">PROFILE</button></li> -->
+        <!-- <li><button class="btn2">CONTACT US<i class="fa-solid fa-phone"></i></button></li> -->
+        <li class="btn2"><div class="user-info-con">
+            <img src="https://i.ibb.co/pP0hTV1/avatar.png" />
+            <h4 class="logged-user">User</h4>
+          </div></li>
+    </div>
+    <div class="centertag">
+    <section class="user-name-input-con ">
+        <div class="input-wrapper">
+          <label for="name1">Enter Name</label>
+          <input type="text" name="name1" id="name1" />
+        </div>
+        <button class="add-name-button">Submit</button>
+      </section></div>
+<div  class="bodyopacity blurbody">     
+<div class="hinditext">HINDI-हिन्दी</div>
+      <div class="grid-container">
+        <div class="grid-item">क<br>K</div>
+        <div class="grid-item">ख<br>Kh</div>
+        <div class="grid-item">ग<br>G</div>
+        <div class="grid-item">घ<br>Gh</div>
+        <div class="grid-item">ङ<br>ṅ</div>
+        <div class="grid-item">च<br>C</div>
+        <div class="grid-item">छ<br>Ch</div>
+        <div class="grid-item">ज<br>J</div>
+        <div class="grid-item">झ<br>Jh</div>
+        <div class="grid-item">ञ<br>ñ</div>
+        <div class="grid-item">ट<br>Ṭ</div>
+        <div class="grid-item">ठ<br>Ṭh</div>
+        <div class="grid-item">ड<br>Ḍ</div>
+        <div class="grid-item">ढ<br>Ḍh</div>
+        <div class="grid-item">ण<br>Ṇ</div>
+        <div class="grid-item">त<br>T</div>
+        <div class="grid-item">थ<br>Th</div>
+        <div class="grid-item">द<br>D</div>
+        <div class="grid-item">ध<br>Dh</div>
+        <div class="grid-item">न<br>N</div>
+        <div class="grid-item">प<br>P</div>
+        <div class="grid-item">फ<br>Ph</div>
+        <div class="grid-item">ब<br>B</div>
+        <div class="grid-item">भ<br>Bh</div>
+        <div class="grid-item">म<br>M</div>
+        <div class="grid-item">य<br>Y</div>
+        <div class="grid-item">र<br>R</div>
+        <div class="grid-item">ल<br>L</div>
+        <div class="grid-item">व<br>V</div>
+        <div class="grid-item">श<br>Ś</div>
+        <div class="grid-item">ष<br>Ṣ</div>
+        <div class="grid-item">स<br>S</div>
+        <div class="grid-item">ह<br>H</div>
+        <div class="grid-item">ळ<br>Ḷ</div>
+        <div class="grid-item">क्ष<br>Kṣ</div>
+        <div class="grid-item">ज्ञ<br>Jñ</div>
+        <div class="grid-item">अ<br>a</div>
+  <div class="grid-item">आ<br>aa</div>  
+  <div class="grid-item">इ<br>i</div>
+  <div class="grid-item">ई<br>ii</div>
+  <div class="grid-item">उ<br>u</div>
+  <div class="grid-item">ऊ<br>uu</div>
+  <div class="grid-item">ऋ<br>r</div>
+  <div class="grid-item">ए<br>e</div>
+  <div class="grid-item">ऐ<br>ai</div>
+  <div class="grid-item">ओ<br>o</div>
+  <div class="grid-item">औ<br>au</div>
+  <!-- <div class="grid-item">नमस्ते<br>Hello</div>
+  <div class="grid-item">धन्यवाद<br>Thank you</div>  
+  <div class="grid-item">माफ़ कीजिए<br>Excuse me</div> -->
+  <div class="grid-item">हाँ<br>Yes</div>
+  <div class="grid-item">नहीं<br>No</div>
+  <!-- <div class="grid-item">शायद<br>Maybe</div>
+  <div class="grid-item">आपका स्वागत है<br>Welcome</div>
+  <div class="grid-item">अलविदा<br>Goodbye</div> -->
+      </div>
+<div class="text1">CONFIDENT ON YOUR HINDI-हिन्दी<BR>Let's Check Skills</div>
+
+
+
+      <button id="quizButton" class="testbutton">START QUIZ</button>
+<div class="main-container" id="quiz" style="display: none;">
+<div id="quiz-container">
+  <div id="question-container">
+    <p id="question"></p>
+    <input type="text" id="answer" placeholder="Enter your answer">
+    <button onclick="checkAnswer()">Submit</button>
+  </div>
+  <div id="score-container">
+    <h2>Score:</h2>
+    <p id="score">0</p>
+  </div></div>
+</div></div> 
+<script>
+  const nameSubmitButton = document.querySelector(".add-name-button")
+const loggedUser = document.querySelector(".logged-user")
+const name1input = document.getElementById("name1")
+const Bodyinput = document.querySelector(".bodyopacity")
+
+const userNameInputtCon = document.querySelector(".user-name-input-con")
+
+window.onload = function (){
+    userNameInputtCon.classList.remove("hide");
+
+}
+
+
+nameSubmitButton.addEventListener("click", ()=>{
+    console.log(name1input.value)
+    loggedUser.innerHTML = name1input.value
+
+     console.log(userNameInputtCon.classList)
+    userNameInputtCon.classList.toggle("hide")
+    
+    console.log(Bodyinput.classList)
+    Bodyinput.classList.toggle("blurbody")
+})
+
+
+const questions = [
+    { question: "Translate 'Good morning' to Hindi:", answer: "Suprabhat" },
+    { question: "Translate 'Hello' to Hindi:", answer: "Namaste" },
+    { question: "Translate 'Thank you' to Hindi:", answer: "Dhanyawad" },
+    { question: "Translate 'Yes' to Hindi:", answer: "Haan" },
+    { question: "Translate 'No' to Hindi:", answer: "Nahi" },
+    { question: "Translate 'How are you?' to Hindi:", answer: "Aap Kaise Hai?" },
+    { question: "Translate 'What is your name?' to Hindi:", answer: "Aapka naam kya hai?" },
+    { question: "Translate 'I love you' to Hindi:", answer: "Main aapse pyara karta/karti hoon" },
+    { question: "Translate 'Where are you from?' to Hindi:", answer: "Aap kahan se hai?" },
+    { question: "Translate 'Goodbye' to Hindi:", answer: "Alvida" }
+  ];
+
+  let currentQuestion = 0;
+  let score = 0;
+
+  function displayQuestion() {
+    document.getElementById('question').innerText = questions[currentQuestion].question;
+  }
+
+  function checkAnswer() {
+    const userAnswer = document.getElementById('answer').value.trim().toLowerCase();
+    const correctAnswer = questions[currentQuestion].answer.toLowerCase();
+
+    if (userAnswer === correctAnswer) {
+      score++;
+      document.getElementById('score').innerText = score;
+    }
+
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+      displayQuestion();
+      document.getElementById('answer').value = '';
+    } else {
+      endQuiz();
+    }
+  }
+
+  function endQuiz() {
+    let quizResult = '';
+    if (score < 5) {
+      quizResult = '<p>Your final score is: ' + score + ' out of ' + questions.length + '</p>' +
+        '<p>It seems like you need to revise. Please try again!</p>';
+    } else {
+      quizResult = '<p>Your final score is: ' + score + ' out of ' + questions.length + '</p>' +
+        '<p>Congratulations! You did well.</p>';
+    }
+
+    document.getElementById('quiz-container').innerHTML = `
+      <h2>Quiz Complete!</h2>
+      ${quizResult}
+    `;
+  }
+
+  window.onload = function() {
+    displayQuestion();
+  };
+
+  document.getElementById('quizButton').addEventListener('click', function() {
+    var quizDiv = document.getElementById('quiz');
+    if (quizDiv.style.display === 'none') {
+      quizDiv.style.display = 'block';
+    } else {
+      quizDiv.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
