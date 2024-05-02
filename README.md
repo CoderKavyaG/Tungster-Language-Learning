@@ -1,5 +1,6 @@
 # Tungster - Language Learning Website
 Welcome to Tungster, your immersive platform for learning Indian languages! We focus on teaching languages like Hindi, Tamil, Telugu, and Punjabi through an innovative grid-based framework. Tungster is designed to make learning fun and interactive while reducing eye strain with a dark-themed interface.
+<a href="tungster.vercel.app">Click here to check it out</a>
 
 ## Project Owners
 - **Primary Owner**: Kavya Goel
@@ -31,8 +32,6 @@ We welcome contributions from the community! Here's how you can participate:
 
 ## Contact Information
 For questions or support, please reach out to the project owners:
-- Kavya Goel: [email@example.com](mailto:email@example.com)
-- Kashish: [email@example.com](mailto:email@example.com)
-- Karunesh: [email@example.com](mailto:email@example.com)
+- Kavya Goel: [email@example.com](mailto:codecraftkavya@gmail.com)
 
 Thank you for choosing Tungster. We look forward to making your language learning journey enjoyable and interactive!
